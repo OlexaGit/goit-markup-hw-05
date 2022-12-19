@@ -405,3 +405,21 @@ ol {
   padding: 32px 16px;
   border: 0.5px solid var(--footer-logo-color);
 }
+/* ------position------ */
+
+.card-set-list {
+  position: relative;
+}
+.card-set-link::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--accent-color-logo);
+  opacity: 0;
+}
+.card-set-link:hover::before {
+  opacity: 1;
+}
