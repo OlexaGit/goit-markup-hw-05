@@ -53,6 +53,10 @@ body {
 .current {
   color: var(--accent-color-logo);
 }
+.current::after {
+  text-underline-position: auto;
+  border-bottom: #188ce8;
+}
 .menu-contact {
   text-decoration: none;
   color: var(--secondary-color);
@@ -407,10 +411,11 @@ ol {
 }
 /* ------position------ */
 
-.card-set-list {
+.card-thumb {
   position: relative;
 }
-.card-set-link::before {
+.card-thumb::before {
+  display: inline-block;
   position: absolute;
   content: '';
   top: 0;
@@ -418,8 +423,21 @@ ol {
   width: 100%;
   height: 100%;
   background-color: var(--accent-color-logo);
+  background-blend-mode: soft-light;
   opacity: 0;
 }
-.card-set-link:hover::before {
+.card-thumb:hover::before {
+  opacity: 1;
+}
+.text-overlay {
+  padding: 40px 32px 164px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  line-height: 1.5;
+  color: var(--footer-logo-color);
+}
+.card-set-link:hover .text-overlay {
   opacity: 1;
 }
