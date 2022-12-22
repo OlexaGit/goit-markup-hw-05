@@ -54,8 +54,13 @@ body {
   color: var(--accent-color-logo);
 }
 .current::after {
-  text-underline-position: auto;
-  border-bottom: #188ce8;
+  display: block;
+  width: 78px;
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 24px;
+  background-color: var(--accent-color-logo);
+  content: '';
 }
 .menu-contact {
   text-decoration: none;
@@ -86,12 +91,12 @@ footer {
 }
 .container-header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-bottom: 24px; */
   display: flex;
 }
 .nav-logo {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .menu-nav {
   display: flex;
@@ -418,7 +423,7 @@ ol {
   display: inline-block;
   position: absolute;
   content: '';
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 100%;
   height: 100%;
