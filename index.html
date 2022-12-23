@@ -42,9 +42,13 @@
     <main>
       <section class="primery-section">
         <h1 class="primery-title">Effective Solutions for Your Business</h1>
-        <button class="modal-btn" type="button">Order Service</button>
-        <div class="backdrop">
-          <div class="modal"></div>
+        <button class="modal-btn" type="button" data-modal-open>Order Service</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <svg class="icon-close" data-modal-close>
+              <use href="./images/icon/symbol-defs.svg#icon-astronaut-1"></use>
+            </svg>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -369,5 +373,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
