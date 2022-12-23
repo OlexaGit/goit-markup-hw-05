@@ -151,6 +151,7 @@ footer {
 /* -------------  STUDIO  ------------------*/
 
 .primery-section {
+  position: relative;
   background-color: var(--background-color);
   color: var(--text-background-color);
   text-align: center;
@@ -197,6 +198,23 @@ footer {
 }
 
 /*--------------------- modal window (begine)------------ */
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(24, 140, 232, 0.5);
+}
+.modal {
+  position: absolute;
+  min-width: 100px;
+  min-height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e7e9fc;
+}
 
 /*--------------------- modal window (end)------------ */
 
